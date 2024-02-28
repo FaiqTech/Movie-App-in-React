@@ -1,0 +1,14 @@
+.card {
+  margin: 10px 20px;
+  background-color: gray;
+  border-radius: 15px;
+  padding: 10px;
+  color: #fff;
+}
+.card-img {
+  border-radius: 13px;
+}
+
+.card-info {
+  margin-top: 15px;
+}

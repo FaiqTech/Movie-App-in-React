@@ -1,0 +1,19 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+    position: sticky;
+    top: 0;
+    width: 100%;
+}
+.left{
+    display: flex;
+}
+.info h4{
+    font-size: 23px;
+    margin-top: 15px;
+}
+.left-logo{
+    width: 120px;
+    height: auto;
+}
