@@ -27,20 +27,21 @@ function App() {
   }, []);
 
   return (
-    <BrowserRouter>
+    <>
       <Header logo={logo} title="Movie Site" subTitle="The Best Movie Site" />
       <div className="container">
         {data.map((item) => {
           return (
             <Card
-              image={item.poster_path}
-              title={item.title}
-              date={item.release_date}
+              // image={item.poster_path}
+              // title={item.title}
+              // date={item.release_date}
+              item={item}
             />
           );
         })}
       </div>
-    </BrowserRouter>
+    </>
   );
 }
 
