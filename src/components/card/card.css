@@ -4,6 +4,10 @@
   border-radius: 15px;
   padding: 10px;
   color: #fff;
+  transition: all 1s;
+}
+.card:hover {
+  scale: 1.07;
 }
 .card-img {
   border-radius: 13px;

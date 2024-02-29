@@ -1,3 +1,4 @@
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "./App.css";
 import axios from "axios";
 import { API_KEY, BASE_URL } from "./config";
@@ -26,7 +27,7 @@ function App() {
   }, []);
 
   return (
-    <>
+    <BrowserRouter>
       <Header logo={logo} title="Movie Site" subTitle="The Best Movie Site" />
       <div className="container">
         {data.map((item) => {
@@ -39,7 +40,7 @@ function App() {
           );
         })}
       </div>
-    </>
+    </BrowserRouter>
   );
 }
 
