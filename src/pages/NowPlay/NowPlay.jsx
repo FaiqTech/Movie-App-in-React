@@ -12,9 +12,10 @@ export default function NowPlay() {
   }, []);
   return (
     <div className="container">
-      {data.map((item) => {
+      {data.map((item, index) => {
         return (
           <Card
+            key={index}
             image={item.poster_path}
             title={item.title}
             date={item.release_date}
