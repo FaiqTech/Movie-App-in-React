@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "./header.css";
 
 const Header = ({ logo, title, subTitle }) => {
@@ -11,8 +12,12 @@ const Header = ({ logo, title, subTitle }) => {
         </div>
       </div>
       <div className="right">
-        <p>Home</p>
-        <p>Now Playing</p>
+        <Link className="link" to="/">
+          Home
+        </Link>
+        <Link className="link" to="/now-playing">
+          Now Playing
+        </Link>
       </div>
     </div>
   );

@@ -30,10 +30,8 @@
   gap: 50px;
   margin-right: 50%;
 }
-.right p {
+.link {
   cursor: pointer;
+  text-decoration: none;
   font-weight: bold;
-}
-.right p:hover {
-  text-decoration: underline;
 }
