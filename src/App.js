@@ -4,6 +4,7 @@ import Header from "./shared/header/header";
 import logo from "./assets/logo/logo.jpeg";
 import Home from "./pages/Home/home";
 import NowPlay from "./pages/NowPlay/NowPlay";
+import MovieInfo from "./pages/movieInfo/movieInfo";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/now-playing" element={<NowPlay />} />
+        <Route path="/movie/:id" element={<MovieInfo />} />
       </Routes>
     </BrowserRouter>
   );

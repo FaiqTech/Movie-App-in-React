@@ -1,17 +1,22 @@
 import { SMALL_IMG_COVER_BASE_URL } from "../../config";
 import "./card.css";
 
-const Card = ({ item }) => {
+const Card = ({ data, sendData }) => {
+  //senDatani lifting up edrk home.jsxe
+
+  const handleClick = () => {
+    sendData(data);
+  };
   return (
-    <div className="card">
+    <div className="card" onClick={handleClick}>
       <img
         className="card-img"
-        src={SMALL_IMG_COVER_BASE_URL + item.poster_path}
-        alt={item.title}
+        src={SMALL_IMG_COVER_BASE_URL + data.poster_path}
+        alt={data.title}
       />
       <div className="card-info">
-        <span>{item.title}</span>
-        <p>{item.release_date}</p>
+        <span>{data.title}</span>
+        <p>{data.release_date}</p>
       </div>
     </div>
   );
