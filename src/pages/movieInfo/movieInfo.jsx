@@ -3,7 +3,7 @@
 import { useLocation } from "react-router-dom";
 import { SMALL_IMG_COVER_BASE_URL } from "../../config";
 import { useEffect, useState } from "react";
-import "./MovieInfo.css"; // CSS dosyasını içe aktar
+import "./MovieInfo.css";
 
 const MovieInfo = () => {
   const location = useLocation();
