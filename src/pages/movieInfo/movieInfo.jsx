@@ -1,7 +1,9 @@
 // MovieInfo.jsx
+
 import { useLocation } from "react-router-dom";
 import { SMALL_IMG_COVER_BASE_URL } from "../../config";
 import { useEffect, useState } from "react";
+import "./MovieInfo.css"; // CSS dosyasını içe aktar
 
 const MovieInfo = () => {
   const location = useLocation();
@@ -11,8 +13,6 @@ const MovieInfo = () => {
   useEffect(() => {
     setData(state);
   }, [state]);
-
-  console.log(state);
 
   // Arka plan görüntüsü stili
   const backdropStyle = {
