@@ -1,3 +1,4 @@
+//fetch.js
 import axios from "axios";
 import { API_KEY, BASE_URL } from "../../config";
 
@@ -7,6 +8,7 @@ async function getMovies(path) {
     return response.data.results;
   } catch (error) {
     console.log(error);
+    throw error; // Səhv hallarını yenidən yuxarıya atmaq
   }
 }
 export default getMovies;

@@ -1,3 +1,4 @@
+//card.jsx
 import { SMALL_IMG_COVER_BASE_URL } from "../../config";
 import "./card.css";
 
