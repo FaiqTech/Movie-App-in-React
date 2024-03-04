@@ -1,3 +1,6 @@
+body {
+  background-color: #f8f8f8;
+}
 .container {
   display: flex;
   flex-wrap: wrap;

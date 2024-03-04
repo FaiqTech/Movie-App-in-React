@@ -1,37 +1,48 @@
+/* header.css */
 .header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: #333;
+  color: #fff;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #fff;
-  position: sticky;
-  top: 0;
-  width: 100%;
-  z-index: 1;
+  padding: 20px 20px;
 }
-.info {
-  margin: 0 20px;
-}
+
 .left {
   display: flex;
+  align-items: center;
 }
+
 .left-logo {
-  margin: 0 20px;
-}
-.info h4 {
-  font-size: 23px;
-  margin-top: 15px;
-}
-.left-logo {
-  width: 120px;
+  width: 50px;
   height: auto;
+  margin-right: 10px;
 }
+
+.info h4 {
+  margin: 0;
+  font-size: 18px;
+}
+
+.info p {
+  margin: 5px 0 0;
+  font-size: 14px;
+}
+
 .right {
   display: flex;
-  gap: 50px;
-  margin-right: 50%;
 }
+
 .link {
-  cursor: pointer;
+  color: #fff;
   text-decoration: none;
-  font-weight: bold;
+  margin-left: 15px;
+  font-size: 16px;
+}
+
+.link:hover {
+  text-decoration: underline;
 }

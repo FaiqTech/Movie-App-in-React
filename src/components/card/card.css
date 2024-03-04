@@ -6,13 +6,29 @@
   color: #fff;
   transition: all 1s;
 }
+
 .card:hover {
-  scale: 1.07;
+  transform: scale(1.07); /* Küçük bir hata düzeltme: "scale" doğru değerdir */
 }
+
 .card-img {
   border-radius: 13px;
 }
 
 .card-info {
   margin-top: 15px;
+}
+
+/* Yıldız stillemesi */
+.star {
+  color: #ffd700; /* Yıldız rengi (altın sarısı) */
+}
+
+.rating {
+  display: flex;
+  align-items: center;
+}
+
+.rating-text {
+  margin-left: 5px;
 }
