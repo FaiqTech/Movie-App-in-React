@@ -1,4 +1,5 @@
 import { SMALL_IMG_COVER_BASE_URL } from "../../config";
+import { FiveStarRating } from "../starRating/starRating";
 import "./card.css";
 
 const Card = ({ data, sendData }) => {
@@ -6,19 +7,7 @@ const Card = ({ data, sendData }) => {
     sendData(data);
   };
 
-  // Yıldızları göstermek için bir fonksiyon oluşturun
-  const renderStars = (rating) => {
-    const stars = [];
-    for (let i = 0; i < Math.round(rating / 2); i++) {
-      stars.push(
-        <span key={i} className="star">
-          &#9733;
-        </span>
-      );
-    }
-    return stars;
-  };
-
+  const rating = data.vote_average / 2; // Oy ortalamasının yarısını alıyoruz.
   return (
     <div className="card" onClick={handleClick}>
       <img
@@ -30,7 +19,7 @@ const Card = ({ data, sendData }) => {
         <span className="card-title">{data.title}</span>
         <p className="card-release">{data.release_date}</p>
         <div className="rating">
-          {renderStars(data.vote_average)} {/* Yıldızları burada çağırın */}
+          <FiveStarRating rating={rating} />
           <span className="rating-text">{data.vote_average}</span>{" "}
           {/* Oy ortalaması */}
         </div>
