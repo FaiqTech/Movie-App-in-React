@@ -11,6 +11,11 @@
   padding: 20px 20px;
 }
 
+.link.active {
+  font-weight: bold;
+  color: #e6b400; /* Aktif bağlantı rengi */
+}
+
 .left {
   display: flex;
   align-items: center;

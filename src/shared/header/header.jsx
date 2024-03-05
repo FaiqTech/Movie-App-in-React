@@ -1,5 +1,4 @@
-//header.jsx
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import "./header.css";
 
 const Header = ({ logo, title, subTitle }) => {
@@ -13,12 +12,12 @@ const Header = ({ logo, title, subTitle }) => {
         </div>
       </div>
       <div className="right">
-        <Link className="link" to="/">
+        <NavLink className="link" to="/" activeClassName="active" exact>
           Home
-        </Link>
-        <Link className="link" to="/now-playing">
+        </NavLink>
+        <NavLink className="link" to="/now-playing" activeClassName="active">
           Now Playing
-        </Link>
+        </NavLink>
       </div>
     </div>
   );
