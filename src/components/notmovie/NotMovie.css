@@ -1,0 +1,18 @@
+.not-movie-container {
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.not-movie-heading {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.not-movie-description {
+  font-size: 16px;
+  color: #666;
+}

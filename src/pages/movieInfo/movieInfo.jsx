@@ -12,8 +12,8 @@ const MovieInfo = () => {
 
   useEffect(() => {
     setData(state);
+    //lifting up edirik
   }, [state]);
-
   return (
     <div>
       <div
