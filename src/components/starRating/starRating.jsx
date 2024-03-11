@@ -15,5 +15,5 @@ export function FiveStarRating({ rating }) {
   for (let i = 0; i < starEmptyCount; i++) {
     starList.push(<StarEmpty key={"star-empty" + i} />);
   }
-  return <div>{starList}</div>;
+  return <div style={{ color: "yellow" }}>{starList}</div>;
 }

@@ -22,22 +22,26 @@ const MovieInfo = () => {
           backgroundImage: `url(${BACKDROP_BASE_URL + data.backdrop_path})`,
         }}
       ></div>
-      <div className="movie-info">
-        <h1>{data.title}</h1>
-        <p>
-          <strong>Release Date:</strong> {data.release_date}
-        </p>
-        <p>
-          <strong>Overview:</strong> {data.overview}
-        </p>
-        <p className="rating">
-          <strong>Rating:</strong>
-          <FiveStarRating rating={rating} />
-        </p>
-        <img
-          src={SMALL_IMG_COVER_BASE_URL + data.poster_path}
-          alt={data.title}
-        />
+      <div className="movie-container">
+        <div className="image-container">
+          <img
+            src={SMALL_IMG_COVER_BASE_URL + data.poster_path}
+            alt={data.title}
+          />
+        </div>
+        <div className="movie-info">
+          <h1>{data.title}</h1>
+          <p>
+            <strong>Release Date:</strong> {data.release_date}
+          </p>
+          <p>
+            <strong>Overview:</strong> {data.overview}
+          </p>
+          <p className="rating">
+            <strong>Rating:</strong>
+            <FiveStarRating rating={rating} />
+          </p>
+        </div>
       </div>
     </div>
   );

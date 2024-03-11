@@ -10,32 +10,34 @@
   background-position: center;
   z-index: -1;
 }
+.movie-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 90vh;
+}
 
 .movie-info {
-  position: relative;
-  top: 20px;
-  margin: 0 auto;
   max-width: 600px;
   padding: 20px;
-  background-color: rgba(255, 255, 255, 0.343);
+  background-color: rgba(255, 255, 255, 0.584);
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
 .movie-info h1 {
-  font-size: 24px;
+  font-size: 30px;
   margin-bottom: 10px;
 }
 
 .movie-info p {
-  font-size: 16px;
+  font-size: 25px;
   margin-bottom: 5px;
 }
 
 .movie-info img {
-  display: block;
-  margin: 20px auto;
   max-width: 100%;
   height: auto;
   border-radius: 5px;
+  margin-right: 20px; /* Add some space between the image and the text */
 }
