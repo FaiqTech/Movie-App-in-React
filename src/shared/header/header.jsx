@@ -4,7 +4,7 @@ import { useState } from "react";
 
 const Header = ({ logo, title, subTitle }) => {
   const [search, setSearch] = useState();
-  // const location = useLocation();
+  const location = useLocation();
   const navigate = useNavigate();
 
   const handleLogoClick = () => {
@@ -13,7 +13,11 @@ const Header = ({ logo, title, subTitle }) => {
 
   const handleSearch = (e) => {
     setSearch(e.target.value);
-    navigate(`/?search=${e.target.value}`);
+    navigate(
+      `${location.pathname == "/" ? "" : "now-playing"}/?search=${
+        e.target.value
+      }`
+    );
   };
 
   return (
